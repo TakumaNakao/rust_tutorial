@@ -1,0 +1,9 @@
+version: '3'
+services:
+  rust:
+    image: rust:latest
+    volumes:
+      - ../../rust_tutorial:/home/rust_tutorial
+      - /etc/passwd:/etc/passwd:ro
+      - /etc/group:/etc/group:ro
+    working_dir: /home/rust_tutorial/rust
